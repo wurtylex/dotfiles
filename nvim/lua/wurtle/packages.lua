@@ -20,7 +20,7 @@ local plugins = {
   'wbthomason/packer.nvim',
   -- Color Scheme 
   'EdenEast/nightfox.nvim',
-  { 'rose-pine/neovim', as = 'rose-pine' },
+  { 'rose-pine/neovim', as = 'rose-pine' }, 
   'xiyaowong/transparent.nvim',
   -- Navigation
   'nvim-telescope/telescope.nvim',
@@ -29,7 +29,11 @@ local plugins = {
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
   'nvim-treesitter/playground',
   -- AutoPairings 
-  { 'windwp/nvim-autopairs', event = "InsertEnter" },
+  {
+    'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    opts = {} -- this is equalent to setup({}) function
+  },
   -- File Explorer 
   'nvim-tree/nvim-tree.lua',
   -- LSP
