@@ -1,3 +1,6 @@
 require('lualine').setup {
-  options = { theme = 'palenight' },
-}
+  options = { 
+    theme = 'palenight',
+    sections = { 'error', 'warn', }
+  },
+} 

@@ -11,7 +11,6 @@ local configs = {
   "null-ls", 
   "mason-config", 
   "trouble",
-  "harpoon", 
 }
 
 for _, v in ipairs(configs) do

@@ -16,15 +16,12 @@ local plugins = {
   'nvim-lua/plenary.nvim',
   'nvim-tree/nvim-web-devicons',
   'lewis6991/gitsigns.nvim',
-  -- Packer can manage itself
-  'wbthomason/packer.nvim',
   -- Color Scheme 
   'EdenEast/nightfox.nvim',
   { 'rose-pine/neovim', as = 'rose-pine' }, 
   'xiyaowong/transparent.nvim',
   -- Navigation
   'nvim-telescope/telescope.nvim',
-  'ThePrimeagen/harpoon',
   -- TreeSitter
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
   'nvim-treesitter/playground',
@@ -60,7 +57,12 @@ local plugins = {
   { "williamboman/mason.nvim", build = ":MasonUpdate" },
   'williamboman/mason-lspconfig.nvim',
   -- Display Errors Better
-  'folke/trouble.nvim',
+  {
+    'folke/trouble.nvim',
+    opts = {
+      severity = vim.diagnostic.severity.WARN,
+    },
+  },
 }
 
 local opts = {}

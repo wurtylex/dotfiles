@@ -1,5 +1,4 @@
-local trouble = require("trouble")
+local opts = { noremap = true, silent = true }
 
-trouble.setup = {
-  severity = vim.diagnostic.severity.ERROR
-}
+-- Trouble
+vim.api.nvim_set_keymap('n', '<leader>t', ':TroubleToggle<CR>', opts)
