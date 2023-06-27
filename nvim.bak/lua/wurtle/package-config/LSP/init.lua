@@ -28,6 +28,3 @@ require("lspconfig").lua_ls.setup {
     },
   },
 }
-
-vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
-vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)

@@ -1,0 +1,36 @@
+local options = {
+	syntax = "ON",
+	ignorecase = true,
+	smartcase = true,
+	incsearch = true,
+	hlsearch = false,
+	smarttab = true,
+	expandtab = true,
+	shiftwidth = 2,
+	softtabstop = 2,
+	tabstop = 2,
+	splitright = true,
+	splitbelow = true,
+	number = true,
+	undofile = true,
+	clipboard = "unnamedplus",
+	conceallevel = 0,
+	fileencoding = "utf-8",
+	hidden = true,
+	mouse = "a",
+	showmode = false,
+	pumheight = 10,
+	wrap = true,
+	scrolloff = 4,
+	sidescrolloff = 4,
+	backup = false,
+	writebackup = false,
+	swapfile = false,
+	--signcolumn = "yes", 
+	--termguicolors = true,
+	--cursorline = true,
+}
+
+for k, v in pairs(options) do
+	vim.opt[k] = v
+end

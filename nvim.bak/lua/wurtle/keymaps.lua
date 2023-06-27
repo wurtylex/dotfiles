@@ -27,6 +27,32 @@ map("v", ">", ">gv", opts)
 -- Switch Transparent View 
 map("n", "tt", ":TransparentToggle<CR>", opts)
 
+-- FuzzyFinder 
+local builtin = require('telescope.builtin')
+map_("n", "<leader>ff", builtin.find_files, opts)
+map_("n", "<leader>fg", builtin.live_grep, opts)
+
+-- Harpoon
+local mark = require('harpoon.mark')
+local ui = require('harpoon.ui')
+map_("n", "<leader>a", mark.add_file, opts)
+map_("n", "<A-e>", ui.toggle_quick_menu, opts)
+map_("n", "<leader>1", function() ui.nav_file(1) end, opts)
+map_("n", "<leader>2", function() ui.nav_file(2) end, opts)
+map_("n", "<leader>3", function() ui.nav_file(3) end, opts)
+map_("n", "<leader>4", function() ui.nav_file(4) end, opts)
+map_("n", "<leader>5", function() ui.nav_file(5) end, opts)
+map_("n", "<C-j>", function() ui.nav_next() end, opts)
+map_("n", "<C-k>", function() ui.nav_prev() end, opts)
+
+-- File Explorer 
+map("n", "<leader>e", ':NvimTreeToggle<CR>', opts)
+map("n", "<leader>fe", ':NvimTreeFocus<CR>', opts)
+
+-- LSP
+map_("n", "gd", vim.lsp.buf.definition, opts)
+map_("n", "gi", vim.lsp.buf.implementation, opts)
+
 -- Naviagate buffers
 map("n", "<A-l>", ":bnext<CR>", opts)
 map("n", "<A-h>", ":bprevious<CR>", opts)
@@ -42,5 +68,5 @@ map('n', '<A-9>', '<Cmd>BufferGoto 9<CR>', opts)
 map('n', '<A-0>', '<Cmd>BufferLast<CR>', opts)
 map('n', '<A-q>', '<Cmd>BufferClose<CR>', opts)
 
--- Trouble
+-- Trouble 
 map('n', '<leader>t', ':TroubleToggle<CR>', opts)
