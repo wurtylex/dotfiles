@@ -8,7 +8,6 @@ local configs = {
   "LSP", 
   "nvim-cmp", 
   "lualine", 
-  "null-ls", 
   "mason-config", 
   "trouble",
 }
