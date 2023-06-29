@@ -46,8 +46,6 @@ local plugins = {
   -- Snippets
   'L3MON4D3/LuaSnip',
   'saadparwaiz1/cmp_luasnip',
-  -- Better Notifications
-  -- 'rcarriga/nvim-notify' -- Note for wurtle set this up later 
   -- Better Status Bar
   'nvim-lualine/lualine.nvim',
   -- Tablines

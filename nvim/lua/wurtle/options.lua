@@ -26,6 +26,7 @@ local options = {
 	backup = false,
 	writebackup = false,
 	swapfile = false,
+  termguicolors = true, 
 	--signcolumn = "yes", 
 	--termguicolors = true,
 	--cursorline = true,
