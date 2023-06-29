@@ -6,7 +6,6 @@ local configs = {
   "FileExplorer",
   "treesitter", 
   "LSP", 
-  "nvim-cmp", 
   "lualine", 
   "mason-config", 
   "trouble",

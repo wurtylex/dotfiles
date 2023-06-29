@@ -33,6 +33,7 @@ local plugins = {
   },
   -- File Explorer 
   'nvim-tree/nvim-tree.lua',
+  'stevearc/oil.nvim',
   -- LSP
   'neovim/nvim-lspconfig',
   'onsails/lspkind.nvim',
@@ -59,9 +60,6 @@ local plugins = {
   -- Display Errors Better
   {
     'folke/trouble.nvim',
-    opts = {
-      severity = vim.diagnostic.severity.WARN,
-    },
   },
 }
 
