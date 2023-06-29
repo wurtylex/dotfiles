@@ -21,7 +21,7 @@ local plugins = {
   { 'rose-pine/neovim', as = 'rose-pine' }, 
   'xiyaowong/transparent.nvim',
   -- Navigation
-  'nvim-telescope/telescope.nvim',
+  { 'nvim-telescope/telescope.nvim', tag = '0.1.1' },
   -- TreeSitter
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
   'nvim-treesitter/playground',
