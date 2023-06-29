@@ -55,12 +55,10 @@ local plugins = {
   -- null-ls
   'jose-elias-alvarez/null-ls.nvim',
   -- Mason for installating stuff
-  { "williamboman/mason.nvim", build = ":MasonUpdate" },
+  { 'williamboman/mason.nvim', build = ':MasonUpdate' },
   'williamboman/mason-lspconfig.nvim',
   -- Display Errors Better
-  {
-    'folke/trouble.nvim',
-  },
+  'folke/trouble.nvim',
 }
 
 local opts = {}

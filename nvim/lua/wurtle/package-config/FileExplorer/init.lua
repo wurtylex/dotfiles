@@ -8,6 +8,7 @@ vim.g.loaded_netrwPlugin = 1
 
 nvim_tree.setup({
   disable_netrw = true,
+  hijack_cursor = true,
 })
 
 -- auto close
