@@ -1,8 +1,6 @@
 local nvim_tree = require("nvim-tree") 
 local oil = require("oil")
 
-local opts = { noremap = true, silent = true }
-
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 

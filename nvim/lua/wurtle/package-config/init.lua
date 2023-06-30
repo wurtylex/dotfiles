@@ -2,13 +2,15 @@ local dirc = "wurtle.package-config."
 
 local configs = {
   "colors",
-  "telescope", 
+  "telescope",
   "FileExplorer",
-  "treesitter", 
-  "LSP", 
-  "lualine", 
-  "mason-config", 
+  "treesitter",
+  "LSP",
+  "lualine",
+  "mason-config",
   "trouble",
+  "toggleterm",
+  "alphastartup",
 }
 
 for _, v in ipairs(configs) do
