@@ -1,8 +1,8 @@
 [window]
 opacity = 0.85
 startup_mode = "Maximized"
-padding = {x = 10, y = 10}
-dynamic_padding = true
+padding = {x = 0, y = 10}
+dynamic_padding = false
 decorations = "None"
 
 [cursor]
