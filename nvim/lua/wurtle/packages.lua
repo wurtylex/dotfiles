@@ -16,6 +16,7 @@ local plugins = {
   "nvim-lua/plenary.nvim",
   "nvim-tree/nvim-web-devicons",
   "lewis6991/gitsigns.nvim",
+  "SmiteshP/nvim-navic",
   -- Color Scheme
   "EdenEast/nightfox.nvim",
   { "rose-pine/neovim",                as = "rose-pine" },
@@ -59,7 +60,12 @@ local plugins = {
   "folke/trouble.nvim",
   -- temrinal
   { "akinsho/toggleterm.nvim", version = "*",         opts = {} },
+  -- startup
   { 'goolord/alpha-nvim',      event = "VimEnter", },
+  -- cool looking thing at the top
+  { "utilyre/barbecue.nvim",   name = "barbecue",     version = "*", },
+  -- vimtex for latex
+  "lervag/vimtex", 
 }
 
 local opts = {}
