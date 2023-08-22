@@ -9,9 +9,11 @@ local on_attach = function()
   )
 end
 
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+
 require("lspconfig")["pyright"].setup({
   on_attach = on_attach,
-	capabilities = capabilities,
+  capabilities = capabilities,
 })
 
 require("lspconfig").lua_ls.setup {
@@ -20,7 +22,7 @@ require("lspconfig").lua_ls.setup {
   settings = {
     Lua = {
       diagnostics = {
-        globals = {'vim'},
+        globals = { 'vim', 'ai' },
       },
     },
   },

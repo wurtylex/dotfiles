@@ -13,6 +13,7 @@ local configs = {
 	"alphastartup",
 	"barbecue",
 	"vimtex",
+	"luasnip",
 }
 
 for _, v in ipairs(configs) do
